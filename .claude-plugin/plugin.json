@@ -1,0 +1,12 @@
+{
+  "name": "lightbringer",
+  "version": "0.1.0",
+  "description": "Patent mining and invention disclosure workflows on Lightbringer: harvest patentable problem-solution pairs from company data, author and submit disclosures, and handle report and priority-draft reviews.",
+  "author": {
+    "name": "Dominic Davies",
+    "email": "dominic@lightbringer.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/discjockeydom/lightbringer-plugin",
+  "keywords": ["patents", "invention-disclosure", "ip", "lightbringer"]
+}
