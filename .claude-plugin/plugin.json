@@ -1,12 +1,17 @@
 {
   "name": "lightbringer",
-  "version": "1.0.0",
-  "description": "Patent mining and invention disclosure workflows on Lightbringer: harvest patentable problem-solution pairs from company data, author and submit disclosures, and handle report and priority-draft reviews.",
+  "version": "1.1.0",
+  "description": "Work with Lightbringer’s patent attorneys: capture and enrich innovations, explore technical work, prepare for patent filing when requested, and collaborate on patent reviews.",
   "author": {
     "name": "Lightbringer AB",
     "email": "dominic@lightbringer.com"
   },
   "license": "MIT",
   "repository": "https://github.com/lightbringer-patents/claude-plugin",
-  "keywords": ["patents", "invention-disclosure", "ip", "lightbringer"]
+  "keywords": [
+    "patents",
+    "invention-disclosure",
+    "ip",
+    "lightbringer"
+  ]
 }
