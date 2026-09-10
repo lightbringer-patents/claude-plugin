@@ -4,12 +4,12 @@ Work with [Lightbringer's patent service](https://lightbringer.com) from your AI
 
 ## Included
 
-- **invention-capture:** register potential innovations from a technical conversation and enrich existing disclosures.
+- **invention-capture:** register potential innovations from a technical conversation and enrich existing innovation records.
 - **lightbringer-agent-skill:** explore authorised technical sources and collaborate on Lightbringer reviews.
 - **lightbringer-patent-service:** connect, understand the service, request patent preparation, and continue professional work through available tools or the team.
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, authenticated through OAuth.
 
-Registration completes when `create_invention` saves a disclosure. The separate `submit_invention` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Current registration requires the server's disclosure schema; blocked saves are reported as pending registration. Agents cannot make payments.
+Registration completes when `register_innovation` saves a innovation description. The separate `prepare_for_patent_filing` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Current registration requires the server's innovation description schema; blocked saves are reported as pending registration. Agents cannot make payments.
 
 ## Install in Claude Code
 
@@ -24,7 +24,7 @@ This repository is Lightbringer's own marketplace. Inclusion in Anthropic's revi
 
 ## Usage
 
-“Register the innovation we just discussed.” “Explore this project for potential innovations.” “Update our existing disclosure with this detail.” “I want Lightbringer to patent this innovation.” “Help me reply to the patent team's review.”
+“Register the innovation we just discussed.” “Explore this project for potential innovations.” “Update our existing innovation description with this detail.” “I want Lightbringer to patent this innovation.” “Help me reply to the patent team's review.”
 
 ## Source and release
 
