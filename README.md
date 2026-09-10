@@ -4,12 +4,12 @@ Work with [Lightbringer's patent service](https://lightbringer.com) from your AI
 
 ## Included
 
-- **invention-capture:** register potential innovations from a technical conversation and enrich existing innovation records.
-- **lightbringer-agent-skill:** explore authorised technical sources and collaborate on Lightbringer reviews.
-- **lightbringer-patent-service:** connect, understand the service, request patent preparation, and continue professional work through available tools or the team.
-- **MCP connector:** `https://mcp.lightbringer.com/mcp`, authenticated through OAuth.
+- **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
+- **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
+- **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps.
+- **patent-review:** read and respond to Lightbringer report and patent-draft reviews, including comments, discussion and formal responses.
 
-Registration completes when `register_innovation` saves a innovation description. The separate `prepare_for_patent_filing` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Current registration requires the server's innovation description schema; blocked saves are reported as pending registration. Agents cannot make payments.
+Registration completes when `register_innovation` saves an innovation description. The separate `prepare_for_patent_filing` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Registration uses the server's structured template; blocked saves are reported as pending registration. Agents cannot make payments.
 
 ## Install in Claude Code
 
