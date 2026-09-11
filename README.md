@@ -20,6 +20,8 @@ Registration completes when `register_innovation` saves an innovation descriptio
 /plugin install lightbringer@lightbringer
 ```
 
+The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`.
+
 Complete OAuth when prompted and select the organisation to connect. Existing record permissions apply. For local validation, run `claude plugin validate . --strict`, then `claude --plugin-dir .` to exercise the package.
 
 This repository is Lightbringer's own marketplace. Inclusion in Anthropic's reviewed community catalog is a separate submission; inclusion in its curated official marketplace is Anthropic's decision. Claude Code installation does not itself establish availability in every Claude chat or managed workspace. Verify the three skills and connector in each target host.
