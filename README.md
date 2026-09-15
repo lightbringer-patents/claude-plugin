@@ -8,6 +8,8 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
+Version 1.1.0 targets the released innovation interface in Altair 4.7.0 and Phaenix 12.5.0. The live MCP tool catalog and prompts were verified on 2026-09-15. Update existing installations to use the renamed tools and these three workflow skills. Host-directory publication is separate from the repository release; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
