@@ -1,12 +1,14 @@
 {
   "name": "lightbringer",
-  "version": "1.1.0",
+  "displayName": "Lightbringer",
+  "version": "1.1.1",
   "description": "Capture and enrich innovations from conversations or technical sources, request patent preparation, and respond to Lightbringer report and patent-draft reviews.",
   "author": {
     "name": "Lightbringer AB",
     "email": "dominic@lightbringer.com"
   },
   "license": "MIT",
+  "homepage": "https://lightbringer.com/our-platform/lightbringer-mcp#setup",
   "repository": "https://github.com/lightbringer-patents/claude-plugin",
   "keywords": [
     "innovations",
