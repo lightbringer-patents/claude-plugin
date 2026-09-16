@@ -9,6 +9,6 @@
 ## 1.1.0 — 2026-09-15
 
 - Add three workflows for capturing and enriching innovations, requesting patent preparation, and responding to patent-team reviews.
-- Align the plugin with the released MCP interface in Altair 4.7.0 and Phaenix 12.5.0.
+- Align the plugin with the Lightbringer MCP tools for innovation registration, automated feedback, and patent-preparation requests.
 - Clarify automated feedback progress, partial results, task recovery and deletion, and 30-day retention.
 - Explain OAuth connection, organisation selection, and the separate outcomes of registration and patent-preparation requests.
