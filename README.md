@@ -8,13 +8,13 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-Version 1.2.0 is prepared for release with four workflow skills, including patent portfolio imports and family refresh. Check the connected MCP tool catalog before using patent search, import or refresh; package preparation does not establish that those tools are deployed or that authenticated host acceptance tests have passed. See the [changelog](CHANGELOG.md) for package updates. Host-directory publication is separate from the repository release; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+The plugin includes four workflow skills. Patent discovery, import and family grouping require `search_public_patents`, `import_patent` and `refresh_patent_family` in the connected MCP tool catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
 - **patent-review:** read and respond to Lightbringer report and patent-draft reviews, including comments, discussion and formal responses.
-- **patent-portfolio:** identify assignee labels, discover and import single patents or portfolios, and update patent family grouping for saved own patents. Family refresh does not update saved text, assets or legal status.
+- **patent-portfolio:** find the names a company files patents under, discover and import publications, and group saved own patents into families. Family grouping does not update patent text or legal status.
 
 Registration completes when `register_innovation` saves an innovation description. The separate `request_patent_preparation` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Registration uses the server's structured template and validates before saving in the same request. Validation errors leave nothing registered; successful saves return the ID/link and non-blocking warnings. Blocked saves are reported as pending registration. Agents cannot make payments.
 
@@ -59,9 +59,11 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 | Capture innovations | `/lightbringer:innovation-capture` | “Help me identify and register innovations in the work we’ve been discussing.” |
 | Request patent preparation | `/lightbringer:patent-preparation` | “I want Lightbringer to prepare this innovation for patent filing.” |
 | Respond to reviews | `/lightbringer:patent-review` | “Show the reviews awaiting my response and help me act on them.” |
-| Import and refresh patents | `/lightbringer:patent-portfolio` | “Identify our assignee labels and import our portfolio.” / “Import this publication.” / “Update our saved patent families.” |
+| Import and refresh patents | `/lightbringer:patent-portfolio` | “Find the names our company files patents under and import our portfolio.” / “Import this publication.” / “Group these saved patents into families.” |
 
 ## Source and release
+
+Version 1.2.0 is prepared for release; see the [changelog](CHANGELOG.md). Package preparation does not establish service availability or authenticated host verification. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for verification and host publication.
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
