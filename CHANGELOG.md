@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 — Unreleased
+
+- Add `patent-portfolio` for assignee identification, single and portfolio imports, and patent family updates for saved own patents.
+- Cover empty searches, publication/application identity, import receipts, bounded retries, conflicts and incomplete family coverage.
+- Check connected tool availability and distinguish family refresh from text, asset and legal-status updates.
+- Mirror the canonical skills tree and document portfolio acceptance cases; deployment and host acceptance remain separate checks.
+
 ## 1.1.1
 
 - Display the plugin as **Lightbringer** and link directly to the setup guide from plugin and marketplace metadata.

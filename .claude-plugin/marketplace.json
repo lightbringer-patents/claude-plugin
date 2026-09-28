@@ -4,13 +4,13 @@
     "name": "Lightbringer AB",
     "email": "dominic@lightbringer.com"
   },
-  "description": "Lightbringer patent service, MCP connector and innovation workflow skills.",
+  "description": "Lightbringer patent service, MCP connector, innovation and patent portfolio workflow skills.",
   "plugins": [
     {
       "name": "lightbringer",
       "displayName": "Lightbringer",
       "source": "./",
-      "description": "Capture and enrich innovations from conversations or technical sources, request patent preparation, and respond to Lightbringer report and patent-draft reviews.",
+      "description": "Capture innovations, request patent preparation, respond to patent reviews, and import or refresh patent portfolios through Lightbringer.",
       "author": {
         "name": "Lightbringer AB",
         "email": "dominic@lightbringer.com"
@@ -22,6 +22,7 @@
         "innovations",
         "patents",
         "patent-review",
+        "patent-portfolio",
         "lightbringer"
       ],
       "category": "productivity"
