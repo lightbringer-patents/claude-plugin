@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 — Unreleased
+
+- Review saved portfolios and family members before deciding on updates.
+- Distinguish families, applications and publications, with recorded statuses, priority provenance and coverage limits.
+- Verify authorised imports and targeted family updates through saved-record readback.
+- Keep review-only requests read-only and explain unsupported reconciliation operations.
+
 ## 1.2.0 — Unreleased
 
 - Add `patent-portfolio` for assignee identification, single and portfolio imports, and patent family updates for saved own patents.

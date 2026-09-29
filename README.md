@@ -14,7 +14,7 @@ The plugin includes four workflow skills. Patent discovery uses `search_public_p
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
 - **patent-review:** read and respond to Lightbringer report and patent-draft reviews, including comments, discussion and formal responses.
-- **patent-portfolio:** find the names a company files patents under, discover and import publications, and group saved own patents into families. Family grouping does not update patent text or legal status.
+- **patent-portfolio:** review saved applications and patent families, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
 
 Registration completes when `register_innovation` saves an innovation description. The separate `request_patent_preparation` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Registration uses the server's structured template and validates before saving in the same request. Validation errors leave nothing registered; successful saves return the ID/link and non-blocking warnings. Blocked saves are reported as pending registration. Agents cannot make payments.
 
@@ -63,7 +63,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 
 ## Source and release
 
-Version 1.2.0 is prepared for release; see the [changelog](CHANGELOG.md). Package preparation does not establish service availability or authenticated host verification. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for verification and host publication.
+Version 1.3.0 is prepared for the next release, following 1.2.0; see the [changelog](CHANGELOG.md). Package preparation does not establish service availability or authenticated host verification. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for verification and host publication.
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
