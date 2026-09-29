@@ -8,7 +8,7 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-The plugin includes four workflow skills. Patent discovery, import and family grouping require `search_public_patents`, `import_patent` and `refresh_patent_family` in the connected MCP tool catalog.
+The plugin includes four workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
