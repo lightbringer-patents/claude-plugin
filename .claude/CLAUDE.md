@@ -20,5 +20,5 @@ release notes, logs, screenshots, and packaged artifacts. Draft PRs are public t
 - If disclosure is uncertain, omit the detail and resolve it privately with a
   maintainer. Report existing leaks privately; do not quote them in a public issue.
 
-Read `README.md` for repository-specific work. Keep `AGENTS.md` and `CLAUDE.md`
-equivalent when updating this policy.
+Read the repository-root `README.md` for repository-specific work. Keep
+`AGENTS.md` and `.claude/CLAUDE.md` equivalent when updating this policy.
