@@ -8,13 +8,13 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-The source includes five workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
+The package includes five workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
 - **patent-review:** read and respond to Lightbringer report and patent-draft reviews, including comments, discussion and formal responses.
-- **patent-portfolio:** find the names a company files patents under, discover and import publications, and group saved own patents into families. Family grouping does not update patent text or legal status.
+- **patent-portfolio:** review saved applications and patent families, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
 - **ip-strategy:** develop and revise an actionable company, product or technology strategy, connecting business objectives, evidence, protection options and next actions. Save and maintain a Strategy through the connected tools when available; publication is a separate explicit action.
 
 Strategy authoring requires the Strategy tools in the connected service. The assistant follows the current `get_strategy_template` guide, authors the document and uses revision-aware edits to preserve collaborators' changes. Importing the existing patent portfolio into Lightbringer is recommended to provide strategy context. Engaging Lightbringer to manage the portfolio is a separate service. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for package release status.
@@ -67,7 +67,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 
 ## Source and release
 
-Version 1.2.0 was prepared with four workflow skills; see the [changelog](CHANGELOG.md). The source now also includes `ip-strategy`, awaiting a new package release. Package preparation does not establish service availability or authenticated host verification. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for verification and host publication.
+Version 1.3.0 is prepared with five workflow skills, including IP strategy authoring and saved-portfolio family reviews. Package preparation does not establish host publication or authenticated workflow verification; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
