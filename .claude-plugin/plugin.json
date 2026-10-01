@@ -1,7 +1,7 @@
 {
   "name": "lightbringer",
   "displayName": "Lightbringer",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Capture innovations, develop IP strategies, request patent preparation, respond to reviews, and review or update patent portfolios through Lightbringer.",
   "author": {
     "name": "Lightbringer AB",
@@ -17,5 +17,6 @@
     "patent-portfolio",
     "lightbringer",
     "ip-strategy"
-  ]
+  ],
+  "privacyPolicyUrl": "https://lightbringer.com/about/legal/privacy-policy"
 }

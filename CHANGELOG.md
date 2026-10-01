@@ -1,6 +1,11 @@
 # Changelog
 
-## 1.3.0 — Unreleased
+## 1.3.1 — Unreleased
+
+- Include a square Lightbringer icon and the privacy policy URL for directory validation.
+- Move repository contributor instructions to `.claude/CLAUDE.md`, preserving Claude Code project guidance without a root plugin-context warning.
+
+## 1.3.0 — 2026-10-01
 
 - Add `ip-strategy` for evidence-based Strategy capture, draft creation and revision-aware direct edits; publication remains explicit.
 - Use relevant published Strategies during innovation capture and recommend creating a strategy when useful.
