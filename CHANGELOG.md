@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 — Unreleased
+
+- Add company-context for a reusable shared business brief and integrate context capture into IP strategy.
+- Use live capture guidance and revision-aware updates; preserve unrelated notes and distinguish adviser/client context.
+- Context tools depend on the connected service; prepared packaging does not establish publication or host acceptance.
+
 ## 1.3.1 — Unreleased
 
 - Include a square Lightbringer icon and the privacy policy URL for directory validation.

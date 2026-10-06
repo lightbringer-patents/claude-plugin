@@ -10,7 +10,7 @@
       "name": "lightbringer",
       "displayName": "Lightbringer",
       "source": "./",
-      "description": "Capture innovations, request patent preparation, respond to patent reviews, and import or refresh patent portfolios through Lightbringer.",
+      "description": "Capture company context and innovations, develop IP strategies, request patent preparation, respond to reviews, and review patent portfolios through Lightbringer.",
       "author": {
         "name": "Lightbringer AB",
         "email": "dominic@lightbringer.com"
@@ -23,7 +23,9 @@
         "patents",
         "patent-review",
         "patent-portfolio",
-        "lightbringer"
+        "lightbringer",
+        "ip-strategy",
+        "company-context"
       ],
       "category": "productivity"
     }
