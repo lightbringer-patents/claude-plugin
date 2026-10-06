@@ -10,10 +10,11 @@
       "name": "lightbringer",
       "displayName": "Lightbringer",
       "source": "./",
-      "description": "Capture innovations, develop IP strategies, request patent preparation, respond to reviews, and review or update patent portfolios through Lightbringer.",
+      "description": "Patent service in your chat",
       "author": {
         "name": "Lightbringer AB",
-        "email": "dominic@lightbringer.com"
+        "email": "dominic@lightbringer.com",
+        "url": "https://lightbringer.com"
       },
       "repository": "https://github.com/lightbringer-patents/claude-plugin",
       "homepage": "https://lightbringer.com/our-platform/lightbringer-mcp#setup",
