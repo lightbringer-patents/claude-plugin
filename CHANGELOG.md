@@ -1,10 +1,18 @@
 # Changelog
 
+## 1.5.0 — Held draft
+
+- Add company-context for a reusable shared business brief and integrate capture into IP strategy.
+- Preserve the 1.4.0 review, notification and feedback guidance across all six mirrored skills.
+- Hold merge and submission until the company-context tools are available in production and their acceptance cases pass.
+
 ## 1.4.0 — Unreleased
 
-- Add company-context for a reusable shared business brief and integrate context capture into IP strategy.
-- Use live capture guidance and revision-aware updates; preserve unrelated notes and distinguish adviser/client context.
-- Context tools depend on the connected service; prepared packaging does not establish publication or host acceptance.
+- Follow live innovation and Strategy capture guides; keep reads and targeted edits separate from new capture.
+- Clarify Strategy context, tool dependencies and optional MCP prompts.
+- Support Strategy review routing and the 2,000-character review-response limit.
+- Correct preparation notification recipients and developer-feedback consent, privacy and delivery guidance.
+- Mirror all five canonical workflow skills and align marketplace descriptions with the plugin manifest.
 
 ## 1.3.1 — Unreleased
 
