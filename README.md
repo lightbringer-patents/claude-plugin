@@ -13,11 +13,13 @@ The package includes five workflow skills. Patent discovery uses `search_public_
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
-- **patent-review:** read and respond to Lightbringer report and patent-draft reviews, including comments, discussion and formal responses.
+- **patent-review:** read and respond to Lightbringer Strategy, report and patent-draft reviews, including comments, discussion and formal responses.
 - **patent-portfolio:** review saved applications and patent families, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
 - **ip-strategy:** develop and revise an actionable company, product or technology strategy, connecting business objectives, evidence, protection options and next actions. Save and maintain a Strategy through the connected tools when available; publication is a separate explicit action.
 
-Strategy authoring requires the Strategy tools in the connected service. The assistant follows the current `get_strategy_template` guide, authors the document and uses revision-aware edits to preserve collaborators' changes. Importing the existing patent portfolio into Lightbringer is recommended to provide strategy context. Engaging Lightbringer to manage the portfolio is a separate service. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for package release status.
+MCP startup guidance supplies service-wide rules and entry points. Tool descriptions define individual operations. Live capture guides own the interview, readiness and creation schema; skills coordinate evidence, decisions and handoffs. MCP prompts are optional task starters, including explicit requests to capture and save. Natural-language requests do not require selecting a prompt. Reading or making a targeted update to a saved record does not require restarting capture.
+
+Strategy authoring requires the Strategy tools in the connected service. The [Strategy workflow](skills/ip-strategy/references/mcp-workflow.md) lists the read, capture and write dependencies and the fallbacks when tools or related skills are missing. Organisation context comes from startup instructions or `whoami`; country, state and website are optional and do not classify the company or determine its first-filing office. The assistant follows the current `get_strategy_template` guide, authors the document and uses revision-aware edits to preserve collaborators' changes. Importing the existing patent portfolio into Lightbringer is recommended to provide strategy context. Engaging Lightbringer to manage the portfolio is a separate service. See [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md) for package release status.
 
 Registration completes when `register_innovation` saves an innovation description. The separate `request_patent_preparation` action requests patent preparation only when the user explicitly wants Lightbringer to patent that innovation. Ordinary capture never submits automatically. Registration uses the server's structured template and validates before saving in the same request. Validation errors leave nothing registered; successful saves return the ID/link and non-blocking warnings. Blocked saves are reported as pending registration. Agents cannot make payments.
 
@@ -49,6 +51,8 @@ If the installation summary asks you to activate changes, run `/reload-plugins`.
 
 The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`.
 
+Tool-issue reports through `send_developer_feedback` require write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from patent-review comments.
+
 Complete OAuth when prompted and select the organisation to connect. Existing record permissions apply. Confirm that the Lightbringer connector and the skills included in your installed package appear in that host.
 
 This repository is Lightbringer's own marketplace. Inclusion in Anthropic's reviewed community catalog is a separate submission; inclusion in its curated official marketplace is Anthropic's decision. Claude Code installation does not itself establish availability in every Claude chat or managed workspace. Verify the installed skills and connector in each target host.
@@ -67,7 +71,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 
 ## Source and release
 
-Version 1.3.1 adds directory metadata to the five workflow skills, including IP strategy authoring and saved-portfolio family reviews. Package preparation does not establish host publication or authenticated workflow verification; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+Version 1.4.0 includes five workflow skills aligned with the released service: live capture guidance, Strategy reviews and current notification and feedback permissions. Package preparation does not establish host publication or authenticated workflow verification; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
