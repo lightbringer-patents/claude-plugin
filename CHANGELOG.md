@@ -6,6 +6,12 @@
 - Preserve the 1.4.0 review, notification and feedback guidance across all six mirrored skills.
 - Hold merge and submission until the company-context tools are available in production and their acceptance cases pass.
 
+## 1.4.1 — Unreleased
+
+- Declare the bundled icon and documentation, support and terms links for directory import.
+- Align the short description and service overview with the Lightbringer patent-service narrative.
+- Document directory refresh, publication checks and expired icon uploads.
+
 ## 1.4.0 — Unreleased
 
 - Follow live innovation and Strategy capture guides; keep reads and targeted edits separate from new capture.

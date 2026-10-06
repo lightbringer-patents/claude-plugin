@@ -2,10 +2,11 @@
   "name": "lightbringer",
   "displayName": "Lightbringer",
   "version": "1.5.0",
-  "description": "Capture company context and innovations, develop IP strategies, request patent preparation, respond to reviews, and review patent portfolios through Lightbringer.",
+  "description": "Patent service in your chat",
   "author": {
     "name": "Lightbringer AB",
-    "email": "dominic@lightbringer.com"
+    "email": "dominic@lightbringer.com",
+    "url": "https://lightbringer.com"
   },
   "license": "MIT",
   "homepage": "https://lightbringer.com/our-platform/lightbringer-mcp#setup",
@@ -19,5 +20,9 @@
     "ip-strategy",
     "company-context"
   ],
-  "privacyPolicyUrl": "https://lightbringer.com/about/legal/privacy-policy"
+  "privacyPolicyUrl": "https://lightbringer.com/about/legal/privacy-policy",
+  "icon": "./.claude-plugin/icon.png",
+  "documentationUrl": "https://github.com/lightbringer-patents/claude-plugin#readme",
+  "supportUrl": "https://www.lightbringer.com/contact/get-in-touch",
+  "termsOfServiceUrl": "https://lightbringer.com/about/legal/terms-of-service"
 }
