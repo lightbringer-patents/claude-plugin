@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.0 — Unreleased
+
+- Follow live innovation and Strategy capture guides; keep reads and targeted edits separate from new capture.
+- Clarify Strategy context, tool dependencies and optional MCP prompts.
+- Support Strategy review routing and the 2,000-character review-response limit.
+- Correct preparation notification recipients and developer-feedback consent, privacy and delivery guidance.
+- Mirror all five canonical workflow skills and align marketplace descriptions with the plugin manifest.
+
 ## 1.3.1 — Unreleased
 
 - Include a square Lightbringer icon and the privacy policy URL for directory validation.
