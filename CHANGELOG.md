@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5.0 — Unreleased
+
+- Add company-context for a reusable shared business brief and integrate capture into IP strategy.
+- Clarify company-context permissions, revision conflicts, complete note replacement and legal applicant-name updates.
+- Read selected patent sections with source attribution and complete pagination; retain unfiltered fetch for family readback.
+- Preserve the 1.4.1 directory metadata and the review, notification and feedback guidance across all six mirrored skills.
+- Company-context tools and focused fetch are advertised by service 4.15.0; authenticated acceptance and host publication remain unverified.
+
 ## 1.4.1 — Unreleased
 
 - Declare the bundled icon and documentation, support and terms links for directory import.
