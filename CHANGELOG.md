@@ -1,10 +1,12 @@
 # Changelog
 
-## 1.5.0 — Held draft
+## 1.5.0 — Unreleased
 
 - Add company-context for a reusable shared business brief and integrate capture into IP strategy.
-- Preserve the 1.4.0 review, notification and feedback guidance across all six mirrored skills.
-- Hold merge and submission until the company-context tools are available in production and their acceptance cases pass.
+- Clarify company-context permissions, revision conflicts, complete note replacement and legal applicant-name updates.
+- Read selected patent sections with source attribution and complete pagination; retain unfiltered fetch for family readback.
+- Preserve the 1.4.1 directory metadata and the review, notification and feedback guidance across all six mirrored skills.
+- Company-context tools and focused fetch are advertised by service 4.15.0; authenticated acceptance and host publication remain unverified.
 
 ## 1.4.1 — Unreleased
 
