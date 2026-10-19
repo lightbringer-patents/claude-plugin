@@ -3,7 +3,7 @@
 ## 1.6.0 — Unreleased
 
 - Prefer shared asset writes for Strategy when the connected tools and required read schemas support them.
-- Use search and fetch for Strategy discovery and reading when supported; retain Strategy-specific tools as the compatibility path.
+- Use search and fetch for Strategy discovery and reading when supported; explicitly deprecate superseded Strategy CRUD tools and retain them only as compatibility fallbacks. Capture guidance and publication tools remain supported.
 - Preserve record identity and separate publication, and reconcile conflicts or uncertain outcomes without replaying writes through another interface.
 - Retain all six mirrored workflow skills, including company-context capture and focused patent-section reads.
 
