@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.6.0 — Unreleased
+
+- Prefer shared asset writes for Strategy when the connected tools and required read schemas support them.
+- Use search and fetch for Strategy discovery and reading when supported; retain Strategy-specific tools as the compatibility path.
+- Preserve record identity and separate publication, and reconcile conflicts or uncertain outcomes without replaying writes through another interface.
+- Retain all six mirrored workflow skills, including company-context capture and focused patent-section reads.
+
 ## 1.5.0 — Unreleased
 
 - Add company-context for a reusable shared business brief and integrate capture into IP strategy.
