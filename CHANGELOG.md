@@ -6,6 +6,8 @@
 - Use search and fetch for Strategy discovery and reading when supported; explicitly deprecate superseded Strategy CRUD tools and retain them only as compatibility fallbacks. Capture guidance and publication tools remain supported.
 - Preserve record identity and separate publication, and reconcile conflicts or uncertain outcomes without replaying writes through another interface.
 - Retain all six mirrored workflow skills, including company-context capture and focused patent-section reads.
+- Request `include_asset: true` for complete Strategy edit state when advertised; retain the matching legacy read/edit path when it is unavailable.
+- Acceptance must include populated multiline Strategy creation after the service 4.18.3 schema update is available in the host. This remains a prepared package; the schema update does not require an additional plugin version.
 
 ## 1.5.0 — Unreleased
 
