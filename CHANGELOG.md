@@ -3,7 +3,7 @@
 ## 1.7.0 — Unreleased
 
 - Add trade-secrets: explain trade secrets, how they differ from patents and the Keep confidential decision, and how the register records entries, statuses, access grants and declared parties.
-- List the register entries the user can open with `list_trade_secrets`, as index rows without entry content. The tool requires the optional `mcp:trade-secrets` scope, which is never granted by default, and an organisation that allows listing its register in AI assistants.
+- List the register entries the user can open with `list_trade_secrets`, as index rows without entry content. The tool requires the `mcp:trade-secrets` scope, which clients that request every supported scope ask for at sign-in, and an organisation that allows listing its register in AI assistants.
 - Treat an empty or partial listing as no evidence that a trade secret does not exist, and never infer entry content from titles.
 - Retain the other six mirrored workflow skills unchanged.
 
