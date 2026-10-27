@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.7.0 — Unreleased
+
+- Add setup for an approachable introduction, current-situation discovery and a practical first Strategy.
+- Reuse existing context and continue into the relevant workflow without a repeated interview.
+- Allow initial planning before portfolio imports while retaining evidence requirements for substantive conclusions.
+- Include seven mirrored skills; host acceptance and publication remain separate checks.
+
 ## 1.6.0 — Unreleased
 
 - Prefer shared asset writes for Strategy when the connected tools and required read schemas support them.
