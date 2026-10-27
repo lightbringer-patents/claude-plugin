@@ -10,7 +10,7 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-The package includes six workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
+The package includes seven workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
@@ -19,6 +19,7 @@ The package includes six workflow skills. Patent discovery uses `search_public_p
 - **patent-portfolio:** review saved applications and patent families, read selected patent sections, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
 - **company-context:** establish and maintain a shared company brief from conversation and evidence; saves require supported tools, write consent and moderator rights.
 - **ip-strategy:** develop and revise an actionable company, product or technology strategy, connecting business objectives, evidence, protection options and next actions. Save and maintain a Strategy through the connected tools when available; publication is a separate explicit action.
+- **trade-secrets:** explain trade secrets, how they differ from patents and the Keep confidential decision, and how the trade secret register works. With the optional `mcp:trade-secrets` scope and where the organisation allows it, list the register entries the user can open by reference, title, status and dates, without entry content.
 
 MCP startup guidance supplies service-wide rules and entry points. Tool descriptions define individual operations. Live capture guides own the interview, readiness and creation schema; skills coordinate evidence, decisions and handoffs. MCP prompts are optional task starters, including explicit requests to capture and save. Natural-language requests do not require selecting a prompt. Reading or making a targeted update to a saved record does not require restarting capture.
 
@@ -52,7 +53,7 @@ If the installation summary asks you to activate changes, run `/reload-plugins`.
 
 ### Connect to Lightbringer
 
-The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`.
+The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`, plus the optional `mcp:trade-secrets` for listing the trade secret register. The optional scope is never granted by default; a client must request it and you approve it separately at sign-in.
 
 Tool-issue reports through `send_developer_feedback` require write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from patent-review comments.
 
@@ -72,10 +73,11 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 | Import and refresh patents | `/lightbringer:patent-portfolio` | “Find the names our company files patents under and import our portfolio.” / “Import this publication.” / “Group these saved patents into families.” |
 | Capture company context | `/lightbringer:company-context` | “Help me describe our business and save a shared company brief.” |
 | Build or update an IP strategy | `/lightbringer:ip-strategy` | “Use our launch brief and saved innovations to build and save an IP strategy.” / “Update our existing strategy for the changed target market.” |
+| Understand and list trade secrets | `/lightbringer:trade-secrets` | “Which trade secret register entries can I open, and which are not yet assessed?” |
 
 ## Source and release
 
-Version 1.6.0 is prepared with six workflow skills and capability-aware Strategy authoring. It retains company-context capture, its integration with IP strategy, and focused patent-section retrieval. Authenticated acceptance and host publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+Version 1.7.0 is prepared with seven workflow skills, adding trade-secrets for trade secret guidance and register listing. It retains capability-aware Strategy authoring, company-context capture, its integration with IP strategy, and focused patent-section retrieval. Authenticated acceptance and host publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
