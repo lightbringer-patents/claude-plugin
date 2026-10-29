@@ -26,7 +26,10 @@
         "lightbringer",
         "ip-strategy",
         "company-context",
-        "trade-secrets"
+        "trade-secrets",
+        "onboarding",
+        "novelty-exploration",
+        "navigation"
       ],
       "category": "productivity"
     }

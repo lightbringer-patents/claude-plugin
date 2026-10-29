@@ -8,7 +8,8 @@
 - Add setup for an approachable introduction, current-situation discovery and a practical first Strategy.
 - Reuse existing context and continue into the relevant workflow without a repeated interview.
 - Allow initial planning before portfolio imports while retaining evidence requirements for substantive conclusions.
-- Include seven mirrored skills; host acceptance and publication remain separate checks.
+- Include nine mirrored skills: add navigation, preliminary novelty exploration and trade secret register guidance; remove the standalone review skill while retaining connected review tools.
+- Handle innovation edit receipts and validation-country selection through available tools. Host acceptance and publication remain separate checks.
 
 ## 1.6.0 — Unreleased
 

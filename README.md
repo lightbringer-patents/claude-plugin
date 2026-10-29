@@ -10,16 +10,18 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-The package includes seven workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
+The package includes nine workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **setup:** get oriented from your current IP situation and develop a practical first plan, saved as a draft Strategy when requested. No patent expertise is needed.
+- **novelty-exploration:** clarify a technical solution, explore related and competitor patents, and import selected references when authorised. Preliminary exploration does not establish novelty or freedom to operate.
+- **lightbringer-navigation:** explain relevant workflows and the patent process, choose a next step from current context and provide platform or team continuations when execution is unavailable.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
-- **patent-review:** read and respond to Lightbringer Strategy, report and patent-draft reviews, including comments, discussion and formal responses.
 - **patent-portfolio:** review saved applications and patent families, read selected patent sections, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
-- **company-context:** establish and maintain a shared company brief from conversation and evidence; saves require supported tools, write consent and moderator rights.
+- **company-context:** establish and maintain a shared company brief from conversation and evidence, for use across patent workflows. Context reads and saves depend on the connected tools; saves require moderator rights.
 - **ip-strategy:** develop and revise an actionable company, product or technology strategy, connecting business objectives, evidence, protection options and next actions. Save and maintain a Strategy through the connected tools when available; publication is a separate explicit action.
+- **trade-secrets:** explain trade secrets, how they differ from patents, and how the trade secret register works. With the `mcp:trade-secrets` scope and where the organisation allows it, list the register entries the user can open by reference, title, status and dates, without entry content. Where the organisation does not have the register, explain how to add it.
 
 MCP startup guidance supplies service-wide rules and entry points. Tool descriptions define individual operations. Live capture guides own the interview, readiness and creation schema; skills coordinate evidence, decisions and handoffs. MCP prompts are optional task starters, including explicit requests to capture and save. Natural-language requests do not require selecting a prompt. Reading or making a targeted update to a saved record does not require restarting capture.
 
@@ -70,14 +72,13 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 | Get started | `/lightbringer:setup` | “Help me get started with Lightbringer and work out our next steps.” |
 | Capture innovations | `/lightbringer:innovation-capture` | “Help me identify and register innovations in the work we’ve been discussing.” |
 | Request patent preparation | `/lightbringer:patent-preparation` | “I want Lightbringer to prepare this innovation for patent filing.” |
-| Respond to reviews | `/lightbringer:patent-review` | “Show the reviews awaiting my response and help me act on them.” |
 | Import and refresh patents | `/lightbringer:patent-portfolio` | “Find the names our company files patents under and import our portfolio.” / “Import this publication.” / “Group these saved patents into families.” |
 | Capture company context | `/lightbringer:company-context` | “Help me describe our business and save a shared company brief.” |
 | Build or update an IP strategy | `/lightbringer:ip-strategy` | “Use our launch brief and saved innovations to build and save an IP strategy.” / “Update our existing strategy for the changed target market.” |
 
 ## Source and release
 
-Version 1.7.0 is prepared with seven workflow skills, including setup and capability-aware Strategy authoring. It retains company-context capture, its integration with IP strategy, and focused patent-section retrieval. Authenticated acceptance and host publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+Version 1.7.0 is prepared with nine workflow skills, including setup and capability-aware Strategy authoring. It retains company-context capture, its integration with IP strategy, and focused patent-section retrieval. Authenticated acceptance and host publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
