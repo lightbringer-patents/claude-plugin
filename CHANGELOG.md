@@ -2,6 +2,9 @@
 
 ## 1.7.0 — Unreleased
 
+- Give useful progress early and discover what still prevents the customer from moving forward.
+- Share optional problem-focused reports across workflows, with exact-report consent and advertised feedback-tool scope.
+
 - Add setup for an approachable introduction, current-situation discovery and a practical first Strategy.
 - Reuse existing context and continue into the relevant workflow without a repeated interview.
 - Allow initial planning before portfolio imports while retaining evidence requirements for substantive conclusions.

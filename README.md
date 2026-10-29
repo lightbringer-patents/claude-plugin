@@ -55,7 +55,7 @@ If the installation summary asks you to activate changes, run `/reload-plugins`.
 
 The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`.
 
-Tool-issue reports through `send_developer_feedback` require write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from patent-review comments.
+When supported by the connected tool, `send_developer_feedback` can report tool issues or customer problems the available assistance could not resolve. Reports describe the desired outcome, help provided and remaining obstacle, without prescribing solutions. Sending requires write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from patent-review comments and professional service requests.
 
 Complete OAuth when prompted and select the organisation to connect. Existing record permissions apply. Confirm that the Lightbringer connector and the skills included in your installed package appear in that host.
 
