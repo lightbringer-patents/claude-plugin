@@ -18,7 +18,8 @@
     "patent-portfolio",
     "lightbringer",
     "ip-strategy",
-    "company-context"
+    "company-context",
+    "trade-secrets"
   ],
   "privacyPolicyUrl": "https://lightbringer.com/about/legal/privacy-policy",
   "icon": "./.claude-plugin/icon.png",
