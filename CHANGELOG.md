@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Remove the patent-review skill. Review comments and decisions follow the connected review guidance and the Lightbringer application until a replacement workflow is published.
+
 ## 1.6.0 — Unreleased
 
 - Prefer shared asset writes for Strategy when the connected tools and required read schemas support them.

@@ -15,7 +15,6 @@ The package includes six workflow skills. Patent discovery uses `search_public_p
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
-- **patent-review:** read and respond to Lightbringer Strategy, report and patent-draft reviews, including comments, discussion and formal responses.
 - **patent-portfolio:** review saved applications and patent families, read selected patent sections, compare with public publications, carry out authorised imports or family updates, and read back the results. Structured family overviews depend on the connected service; family grouping does not update patent text or legal status.
 - **company-context:** establish and maintain a shared company brief from conversation and evidence; saves require supported tools, write consent and moderator rights.
 - **ip-strategy:** develop and revise an actionable company, product or technology strategy, connecting business objectives, evidence, protection options and next actions. Save and maintain a Strategy through the connected tools when available; publication is a separate explicit action.
@@ -54,7 +53,7 @@ If the installation summary asks you to activate changes, run `/reload-plugins`.
 
 The connector uses OAuth 2.1 (Authorization Code + PKCE, S256) with Dynamic Client Registration. The server advertises its authorization server via RFC 9728 protected-resource metadata (`/.well-known/oauth-protected-resource`); on first use, clients prompt you to sign in to Lightbringer. Supported scopes are `mcp:read` and `mcp:write`.
 
-Tool-issue reports through `send_developer_feedback` require write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from patent-review comments.
+Tool-issue reports through `send_developer_feedback` require write consent and explicit approval of the report fields after explaining the engineering Slack recipient. The user cannot view that channel. Reports exclude confidential content and receive no automatic account or client metadata; they are separate from review comments on Lightbringer documents.
 
 Complete OAuth when prompted and select the organisation to connect. Existing record permissions apply. Confirm that the Lightbringer connector and the skills included in your installed package appear in that host.
 
@@ -68,7 +67,6 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 | --- | --- | --- |
 | Capture innovations | `/lightbringer:innovation-capture` | “Help me identify and register innovations in the work we’ve been discussing.” |
 | Request patent preparation | `/lightbringer:patent-preparation` | “I want Lightbringer to prepare this innovation for patent filing.” |
-| Respond to reviews | `/lightbringer:patent-review` | “Show the reviews awaiting my response and help me act on them.” |
 | Import and refresh patents | `/lightbringer:patent-portfolio` | “Find the names our company files patents under and import our portfolio.” / “Import this publication.” / “Group these saved patents into families.” |
 | Capture company context | `/lightbringer:company-context` | “Help me describe our business and save a shared company brief.” |
 | Build or update an IP strategy | `/lightbringer:ip-strategy` | “Use our launch brief and saved innovations to build and save an IP strategy.” / “Update our existing strategy for the changed target market.” |
