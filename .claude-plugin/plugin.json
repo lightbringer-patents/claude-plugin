@@ -1,7 +1,7 @@
 {
   "name": "lightbringer",
   "displayName": "Lightbringer",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Patent service in your chat",
   "author": {
     "name": "Lightbringer AB",
@@ -14,11 +14,14 @@
   "keywords": [
     "innovations",
     "patents",
-    "patent-review",
     "patent-portfolio",
     "lightbringer",
     "ip-strategy",
-    "company-context"
+    "company-context",
+    "trade-secrets",
+    "onboarding",
+    "novelty-exploration",
+    "navigation"
   ],
   "privacyPolicyUrl": "https://lightbringer.com/about/legal/privacy-policy",
   "icon": "./.claude-plugin/icon.png",

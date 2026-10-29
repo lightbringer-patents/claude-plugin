@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.7.0 — Unreleased
+
+- Give useful progress early and discover what still prevents the customer from moving forward.
+- Share optional problem-focused reports across workflows, with exact-report consent and advertised feedback-tool scope.
+
+- Add setup for an approachable introduction, current-situation discovery and a practical first Strategy.
+- Reuse existing context and continue into the relevant workflow without a repeated interview.
+- Allow initial planning before portfolio imports while retaining evidence requirements for substantive conclusions.
+- Include nine mirrored skills: add navigation, preliminary novelty exploration and trade secret register guidance; remove the standalone review skill while retaining connected review tools.
+- Handle innovation edit receipts and validation-country selection through available tools. Host acceptance and publication remain separate checks.
+
 ## 1.6.0 — Unreleased
 
 - Prefer shared asset writes for Strategy when the connected tools and required read schemas support them.
