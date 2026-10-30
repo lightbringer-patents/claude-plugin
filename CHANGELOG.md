@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.1 — Unreleased
+
+- When the trade secret register listing is not available, explain that the organisation can add the register by contacting Lightbringer, instead of pointing to connection settings.
+- Mention the trade secret register permission only if the user says the organisation already has the register.
+- Retain the other eight mirrored workflow skills unchanged.
+
 ## 1.7.0 — Unreleased
 
 - Give useful progress early and discover what still prevents the customer from moving forward.
