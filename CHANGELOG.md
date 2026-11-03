@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.7.2 — Unreleased
+
+- Make each skill self-contained, as the Agent Skills specification requires: copy shared guidance into each skill that uses it and name related workflows instead of linking into other skills.
+- Retain the guidance and behaviour of all nine mirrored workflow skills.
+
 ## 1.7.1 — Unreleased
 
 - When the trade secret register listing is not available, explain that the organisation can add the register by contacting Lightbringer, instead of pointing to connection settings.
