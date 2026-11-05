@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.3 — Unreleased
+
+- Guide authorised illustration uploads and vault file reads/uploads through the tools available to the connection.
+- Handle host transfer limits, partial tool availability, registration retries and readback without duplicate uploads.
+- Mirror all nine canonical skills and their self-contained references. Host acceptance and publication remain separate.
+
 ## 1.7.2 — Unreleased
 
 - Make each skill self-contained, as the Agent Skills specification requires: copy shared guidance into each skill that uses it and name related workflows instead of linking into other skills.
