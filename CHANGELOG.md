@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.8.0 — Unreleased
+## 1.9.0 — Unreleased
 
 - Once an innovation or Strategy is saved, offer once to invite the colleagues who should validate it, and act on direct requests to invite someone.
 - Use only email addresses the user provides or points to, and send invitations only after the user approves the exact people, roles and document. A draft Strategy must be published first.
