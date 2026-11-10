@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Restore the patent-review skill: read a review's instructions and material, draft feedback in the user's voice, post approved comments and replies, set validation countries, and record explicit approve or request-changes responses.
+- Name patent-review again from innovation capture, patent preparation and navigation when it is installed, keeping the connected review guidance as the fallback.
+
 ## 1.7.2 — Unreleased
 
 - Make each skill self-contained, as the Agent Skills specification requires: copy shared guidance into each skill that uses it and name related workflows instead of linking into other skills.
