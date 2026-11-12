@@ -10,12 +10,13 @@ Tasks and findings expire 30 days after creation; reading does not consume them 
 
 ## Included
 
-The package includes ten workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
+The package includes eleven workflow skills. Patent discovery uses `search_public_patents`; `import_patent` saves publications and automatically attempts family grouping for own patents. `refresh_patent_family` supports targeted updates to saved families when needed. Use the tools available in the connected MCP catalog.
 
 - **MCP connector:** `https://mcp.lightbringer.com/mcp`, with OAuth and organisation-scoped access.
 - **setup:** get oriented from your current IP situation and develop a practical first plan, saved as a draft Strategy when requested. No patent expertise is needed.
 - **novelty-exploration:** clarify a technical solution, explore related and competitor patents, and import selected references when authorised. Preliminary exploration does not establish novelty or freedom to operate.
 - **lightbringer-navigation:** explain relevant workflows and the patent process, choose a next step from current context and provide platform or team continuations when execution is unavailable.
+- **journeys:** find a Lightbringer journey that fits the request, start it with the inputs already known, follow it to its outcome and deal with its questions. The connected service lists the journeys and their inputs.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
 - **patent-review:** read and respond to Lightbringer Strategy, report, patent-draft and validation reviews, starting from the review's instructions, including comments, discussion, country selection and formal responses.
@@ -71,6 +72,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 | Workflow | Claude Code command | Example request |
 | --- | --- | --- |
 | Get started | `/lightbringer:setup` | “Help me get started with Lightbringer and work out our next steps.” |
+| Start a journey | `/lightbringer:journeys` | “Which Lightbringer journeys can help with this?” |
 | Capture innovations | `/lightbringer:innovation-capture` | “Help me identify and register innovations in the work we’ve been discussing.” |
 | Request patent preparation | `/lightbringer:patent-preparation` | “I want Lightbringer to prepare this innovation for patent filing.” |
 | Respond to reviews | `/lightbringer:patent-review` | “Show the reviews awaiting my response and help me act on them.” |
