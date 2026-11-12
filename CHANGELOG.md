@@ -4,6 +4,9 @@
 
 - Restore the patent-review skill: read a review's instructions and material, draft feedback in the user's voice, post approved comments and replies, set validation countries, and record explicit approve or request-changes responses.
 - Name patent-review again from innovation capture, patent preparation and navigation when it is installed, keeping the connected review guidance as the fallback.
+- Add the journeys skill: find a listed Lightbringer journey that fits the request, start it with the inputs already known, follow it to its outcome and relay its questions, including sources it could not check.
+- Navigation checks the listed journeys before it works through a broad request itself.
+- The journeys skill first answers what the conversation already settles, then asks the user only the rest and every question that starts with `For the user:`.
 
 ## 1.7.2 — Unreleased
 
