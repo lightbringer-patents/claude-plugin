@@ -14,6 +14,14 @@
 - Handle host transfer limits, partial tool availability, registration retries and readback without duplicate uploads.
 - Mirror all nine canonical skills and their self-contained references. Host acceptance and publication remain separate.
 
+## 1.8.0 — Unreleased
+
+- Present a focused invention-feedback shortlist and separate optional ideas while preserving the full existing run.
+- Track progress through selected questions and ask before saving proposed disclosure updates.
+- Prefer supported saved-invention and review components without duplicating their content in chat; retain text fallbacks.
+- Use concise submission confirmations and supported contact collection, preserving approval requirements.
+- Retain all nine mirrored workflows and the production connection.
+
 ## 1.7.2 — Unreleased
 
 - Make each skill self-contained, as the Agent Skills specification requires: copy shared guidance into each skill that uses it and name related workflows instead of linking into other skills.
