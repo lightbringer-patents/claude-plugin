@@ -1,17 +1,16 @@
 # Changelog
 
-## Unreleased
+## 1.9.1 — Prepared
 
-- Restore the patent-review skill: read a review's instructions and material, draft feedback in the user's voice, post approved comments and replies, set validation countries, and record explicit approve or request-changes responses.
-- Name patent-review again from innovation capture, patent preparation and navigation when it is installed, keeping the connected review guidance as the fallback.
-- Add the journeys skill: find a listed Lightbringer journey that fits the request, start it with the inputs already known, follow it, deal with its questions and relay its outcome, including sources it could not check.
-- Navigation checks the listed journeys before it works through a broad request itself.
-- The journeys skill first answers what the conversation already settles, then asks the user only the rest and every question that starts with `For the user:`.
+- Reconcile portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations from #21, #22, #23 and #24. Supersede the separate 1.7.3, 1.8.0 and 1.9.0 candidates.
+- Mirror all eleven canonical skills and self-contained references, including restored patent review and conditional journeys. The pause-and-resume guidance for running journeys applies to unrelated user messages; replies about the journey follow its current workflow.
+- Preserve explicit save and invitation approval, source support, partial-tool fallbacks and separate patent-preparation decisions.
+- Bump the package version so installed clients can detect the content changes. Host acceptance and publication remain separate.
 
-## 1.7.2 — Unreleased
+## 1.7.2 — Published baseline verified 2026-11-13
 
 - Make each skill self-contained, as the Agent Skills specification requires: copy shared guidance into each skill that uses it and name related workflows instead of linking into other skills.
-- Retain the guidance and behaviour of all nine mirrored workflow skills.
+- The published repository commit includes eleven skills: restored patent-review guidance and conditional journeys were added after the initial nine-skill package without another version bump.
 
 ## 1.7.1 — Unreleased
 
