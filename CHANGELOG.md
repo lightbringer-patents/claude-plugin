@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.0 — Unreleased
+
+- Once an innovation or Strategy is saved, offer once to invite the colleagues who should validate it, and act on direct requests to invite someone.
+- Use only email addresses the user provides or points to, and send invitations only after the user approves the exact people, roles and document. A draft Strategy must be published first.
+- Where the connection does not offer invitations, point to the organisation's moderator or the Team settings. The other seven mirrored skills are unchanged.
+
 ## Unreleased
 
 - Restore the patent-review skill: read a review's instructions and material, draft feedback in the user's voice, post approved comments and replies, set validation countries, and record explicit approve or request-changes responses.
