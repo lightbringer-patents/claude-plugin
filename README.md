@@ -16,7 +16,7 @@ The package includes eleven workflow skills. Patent discovery uses `search_publi
 - **setup:** get oriented from your current IP situation and develop a practical first plan, saved as a draft Strategy when requested. No patent expertise is needed.
 - **novelty-exploration:** clarify a technical solution, explore related and competitor patents, and import selected references when authorised. Preliminary exploration does not establish novelty or freedom to operate.
 - **lightbringer-navigation:** explain relevant workflows and the patent process, choose a next step, and find, read or save vault files through the available tools. Provide platform or team continuations when execution is unavailable.
-- **journeys:** find a Lightbringer journey that fits the request, start it with the inputs already known, follow it to its outcome and deal with its questions. The connected service lists the journeys and their inputs.
+- **journeys:** find a Lightbringer journey that fits the request, start it with the inputs already known, follow it to its outcome and deal with its questions. Use journeys only when the connected service advertises their tools.
 - **innovation-capture:** identify, register and enrich innovations from a conversation, inventor interview or authorised source exploration, and add illustrations to selected draft innovations. Once a record is saved, offer to invite co-inventors to validate it.
 - **patent-preparation:** request preparation of a selected innovation for patent filing and report the confirmed status and next steps. Refinement is optional; an explicit request does not require an automated feedback or revision cycle.
 - **patent-review:** read and respond to Lightbringer Strategy, report, patent-draft and validation reviews, starting from the review's instructions, including comments, discussion, country selection and formal responses.
@@ -84,7 +84,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 
 ## Source and release
 
-Version 1.9.0 is prepared with ten workflow skills, including setup, capability-aware Strategy authoring and guidance for inviting colleagues to a document. It retains company-context capture, its integration with IP strategy, and focused patent-section retrieval. Authenticated acceptance and host publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+Version 1.9.1 is prepared with eleven self-contained workflow skills, portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations. Journeys remain conditional on advertised tools. Host acceptance and publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
