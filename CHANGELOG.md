@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.2 — Prepared
+
+- Treat an unavailable trade secret listing tool as an unknown access state, rather than evidence that the organisation needs to add the register.
+- Prefer supported Strategy search/fetch reads during source exploration, with legacy tools only as compatibility fallbacks; preserve publication and adoption uncertainty.
+- Describe the bundled icon without formatting an image path as code in the README.
+- Mirror all eleven canonical skills. Host acceptance and publication remain separate.
+
 ## 1.9.1 — Prepared
 
 - Reconcile portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations from #21, #22, #23 and #24. Supersede the separate 1.7.3, 1.8.0 and 1.9.0 candidates.
