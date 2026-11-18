@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.0 — Prepared
+
+- Choose a journey from the `start_journey` description, which names each journey that the connection can start, with its inputs and what it delivers. The skills no longer depend on a separate journey list.
+- Includes everything prepared for 1.9.2.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
+
 ## 1.9.2 — Prepared
 
 - Start a journey only when the connection also offers `answer_agent` and a `get_task_status` that can wait for changes, so the journey's questions can be answered and its result read. Otherwise continue with the relevant workflow. Follow `next_step` when a result includes it.
