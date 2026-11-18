@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.2 — Prepared
+
+- Start a journey only when the connection also offers `answer_agent` and a `get_task_status` that can wait for changes, so the journey's questions can be answered and its result read. Otherwise continue with the relevant workflow. Follow `next_step` when a result includes it.
+- Align with Lightbringer service 4.26.0, which makes the journey tools available in production. Includes everything prepared for 1.9.1.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
+
 ## 1.9.1 — Prepared
 
 - Reconcile portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations from #21, #22, #23 and #24. Supersede the separate 1.7.3, 1.8.0 and 1.9.0 candidates.
