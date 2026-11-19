@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.3 — Prepared
+
+- Reword the confidential know-how register description in the README and listing keywords. Skills, tools and sign-in behaviour are unchanged.
+
 ## 1.9.2 — Prepared
 
 - Start a journey only when the connection also offers `answer_agent` and a `get_task_status` that can wait for changes, so the journey's questions can be answered and its result read. Otherwise continue with the relevant workflow. Follow `next_step` when a result includes it.
