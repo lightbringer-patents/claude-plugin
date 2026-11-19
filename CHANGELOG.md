@@ -1,8 +1,15 @@
 # Changelog
 
-## 1.9.3 — Prepared
+## 1.10.1 — Prepared
 
 - Reword the confidential know-how register description in the README and listing keywords. Skills, tools and sign-in behaviour are unchanged.
+
+## 1.10.0 — Prepared
+
+- Choose a journey from the `start_journey` description, which names each journey that the connection can start, with its inputs and what it delivers. The skills no longer depend on a separate journey list.
+- `innovation-capture`, `ip-strategy`, `setup` and `novelty-exploration` check the journeys named in the `start_journey` description first, and follow the `journeys` skill when one fits. Otherwise they continue with their own workflow and do not mention journeys.
+- Includes everything prepared for 1.9.2.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
 
 ## 1.9.2 — Prepared
 
