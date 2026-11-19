@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.10.1 — Prepared
+
+- Reword the confidential know-how register description in the README and listing keywords. Skills, tools and sign-in behaviour are unchanged.
+
 ## 1.10.0 — Prepared
 
 - Choose a journey from the `start_journey` description, which names each journey that the connection can start, with its inputs and what it delivers. The skills no longer depend on a separate journey list.

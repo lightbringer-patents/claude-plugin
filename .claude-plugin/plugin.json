@@ -1,7 +1,7 @@
 {
   "name": "lightbringer",
   "displayName": "Lightbringer",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "Patent service in your chat",
   "author": {
     "name": "Lightbringer AB",
@@ -19,7 +19,7 @@
     "lightbringer",
     "ip-strategy",
     "company-context",
-    "trade-secrets",
+    "confidential-know-how",
     "onboarding",
     "novelty-exploration",
     "navigation",
