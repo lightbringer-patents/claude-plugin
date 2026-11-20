@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.3 — Prepared
+
+- Reword one sentence in the README section on directory listing maintenance. Skills, tools and sign-in behaviour are unchanged.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
+
 ## 1.10.1 — Prepared
 
 - Reword the confidential know-how register description in the README and listing keywords. Skills, tools and sign-in behaviour are unchanged.
