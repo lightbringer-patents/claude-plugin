@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.4 — Prepared
+
+- Update the plugin icon to the approved white-on-dark logo, rendered from its SVG with the original padding and proportions preserved.
+- Keep workflow skills, the MCP connection and tool-call icons unchanged. Host acceptance and publication remain separate.
+
 ## 1.10.3 — Prepared
 
 - Reword one sentence in the README section on directory listing maintenance. Skills, tools and sign-in behaviour are unchanged.
