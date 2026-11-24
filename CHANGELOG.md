@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.4 — Prepared
+
+- Combine shared-asset migration and conditional guided invention capture with the pending contributor, file-transfer and journey-permission updates.
+- Keep direct saves, source exploration and guided capture distinct; preserve selected records and unsaved read-only results.
+- Mirror the complete canonical skill tree. Capture alone does not request professional services.
+- Package validation and hosted acceptance are separate from publication; keep this candidate unpublished until the required checks pass.
+
 ## 1.10.3 — Prepared
 
 - Reword one sentence in the README section on directory listing maintenance. Skills, tools and sign-in behaviour are unchanged.
