@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.5 — Prepared
+
+- Align the shared file-upload references with the canonical skills: when host network settings block an upload, identify the upload hostname so the user can allow it and retry. Keep the manual continuation and upload-confirmation requirements.
+- Retain the approved PNG logo from 1.10.4. Host acceptance and publication remain separate.
+
 ## 1.10.4 — Prepared
 
 - Update the plugin icon to the approved white-on-dark logo, rendered from its SVG with the original padding and proportions preserved.
