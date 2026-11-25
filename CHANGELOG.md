@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.10.5 — Prepared
+
+- Prefer the advertised guided capture journey for natural invention-disclosure requests, including unsaved read-only drafts.
+- Keep direct record operations and source exploration distinct, with self-contained workflow references.
+- Ground handoff facts in the original user messages and retain accurate saved or unsaved outcomes.
+- Regenerate the complete canonical skill mirror; package validation and host acceptance remain separate from publication.
+
 ## 1.10.4 — Prepared
 
 - Combine shared-asset migration and conditional guided invention capture with the pending contributor, file-transfer and journey-permission updates.
