@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.6 — Prepared
+
+- Preserve the stated drawbacks of existing approaches without inferring opposite properties from a proposed benefit.
+- Regenerate the canonical skill mirror; publication remains separate from package validation.
+
 ## 1.10.5 — Prepared
 
 - Prefer the advertised guided capture journey for natural invention-disclosure requests, including unsaved read-only drafts.
