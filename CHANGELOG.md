@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.4 — Prepared
+
+- Describe the bundled icon in the README's directory listing section without naming its file path. The icon and manifest are unchanged. Skills, tools and sign-in behaviour are unchanged.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
+
 ## 1.10.3 — Prepared
 
 - Reword one sentence in the README section on directory listing maintenance. Skills, tools and sign-in behaviour are unchanged.
