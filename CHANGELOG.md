@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.7 — Prepared
+
+- Consolidate source fidelity checks under “Preserve supported facts”, keeping stated drawbacks separate from intended benefits without a scenario-specific example.
+- Regenerate the complete canonical skill mirror; publication remains separate from package validation.
+
 ## 1.10.6 — Prepared
 
 - Preserve the stated drawbacks of existing approaches without inferring opposite properties from a proposed benefit.
