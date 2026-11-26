@@ -35,7 +35,7 @@ checks. Keep it to files the directory accepts:
   `CLAUDE.local.md` or anything under `.claude/`. This guide holds the policy instead.
 - Do not name image or font files in the README or other text; describe them
   in words. Only `plugin.json` refers to the icon.
-- Do not add sign-in credentials such as passwords, access keys or tokens, real
-  or placeholder. The connector signs in with OAuth and needs none.
+- Do not add credentials such as passwords, access keys, client secrets or
+  tokens, real or placeholder. The connector signs in with OAuth and needs none.
 
 Read the repository-root `README.md` for repository-specific work.
