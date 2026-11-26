@@ -24,6 +24,20 @@ release notes, logs, screenshots, and packaged artifacts. Draft PRs are public t
 - If disclosure is uncertain, omit the detail and resolve it privately with a
   maintainer. Report existing leaks privately; do not quote them in a public issue.
 
+## Plugin directory rules
+
+The whole repository is the plugin package that the Claude plugin directory
+checks. Keep it to files the directory accepts:
+
+- Ship only Markdown, JSON, the licence and the bundled PNG icon. Do not add
+  scripts, package-manager files or other file types.
+- Do not add agent instruction files such as `AGENTS.md`, `CLAUDE.md`,
+  `CLAUDE.local.md` or anything under `.claude/`. This guide holds the policy instead.
+- Do not name image or font files in the README or other text; describe them
+  in words. Only `plugin.json` refers to the icon.
+- Do not show credentials, environment variables or example API keys anywhere.
+  The connector signs in with OAuth and needs none.
+
 Read the repository-root `README.md` for repository-specific work. This plugin
 does not ship agent instruction files such as `AGENTS.md` or `CLAUDE.md`; keep
 this policy here.
