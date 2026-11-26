@@ -1,4 +1,8 @@
-# Public repository instructions
+# Contributing
+
+This policy applies to everyone who changes this repository, including coding agents.
+
+## Public repository rules
 
 This repository is public. Treat every GitHub write as publication, including
 files, commit messages, branch and tag names, PR titles and descriptions, comments,
@@ -20,5 +24,18 @@ release notes, logs, screenshots, and packaged artifacts. Draft PRs are public t
 - If disclosure is uncertain, omit the detail and resolve it privately with a
   maintainer. Report existing leaks privately; do not quote them in a public issue.
 
-Read the repository-root `README.md` for repository-specific work. Keep
-`AGENTS.md` and `.claude/CLAUDE.md` equivalent when updating this policy.
+## Plugin directory rules
+
+The whole repository is the plugin package that the Claude plugin directory
+checks. Keep it to files the directory accepts:
+
+- Ship only Markdown, JSON, the licence and the bundled PNG icon. Do not add
+  scripts, package-manager files or other file types.
+- Do not add agent instruction files such as `AGENTS.md`, `CLAUDE.md`,
+  `CLAUDE.local.md` or anything under `.claude/`. This guide holds the policy instead.
+- Do not name image or font files in the README or other text; describe them
+  in words. Only `plugin.json` refers to the icon.
+- Do not add credentials such as passwords, access keys, client secrets or
+  tokens, real or placeholder. The connector signs in with OAuth and needs none.
+
+Read the repository-root `README.md` for repository-specific work.

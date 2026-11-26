@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.10.8 — Prepared
+
+- Preserve supplied technical passages in lightweight saves and verify saved content before confirming completion.
+- Re-evaluate the workflow for each new request; load source-exploration guidance and check current records before reporting findings.
+- Include the guided-capture and shared-asset updates, with direct saves, exploration and read-only drafts kept distinct.
+- Retain the contributor policy and directory-compatible packaging from the current main branch; regenerate the full canonical skill mirror.
+- Package validation, host acceptance and publication remain separate; this candidate is not published.
+
 ## 1.10.7 — Prepared
 
 - Consolidate source fidelity checks under “Preserve supported facts”, keeping stated drawbacks separate from intended benefits without a scenario-specific example.
@@ -12,17 +20,13 @@
 
 ## 1.10.5 — Prepared
 
-- Prefer the advertised guided capture journey for natural invention-disclosure requests, including unsaved read-only drafts.
-- Keep direct record operations and source exploration distinct, with self-contained workflow references.
-- Ground handoff facts in the original user messages and retain accurate saved or unsaved outcomes.
-- Regenerate the complete canonical skill mirror; package validation and host acceptance remain separate from publication.
+- Move the contributor policy into `CONTRIBUTING.md` and remove the agent instruction files `AGENTS.md` and `.claude/CLAUDE.md`, which the directory no longer accepts in plugin packages. The README links to the contributor guide. Skills, tools and sign-in behaviour are unchanged.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
 
 ## 1.10.4 — Prepared
 
-- Combine shared-asset migration and conditional guided invention capture with the pending contributor, file-transfer and journey-permission updates.
-- Keep direct saves, source exploration and guided capture distinct; preserve selected records and unsaved read-only results.
-- Mirror the complete canonical skill tree. Capture alone does not request professional services.
-- Package validation and hosted acceptance are separate from publication; keep this candidate unpublished until the required checks pass.
+- Describe the bundled icon in the README's directory listing section without naming its file path. The icon and manifest are unchanged. Skills, tools and sign-in behaviour are unchanged.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
 
 ## 1.10.3 — Prepared
 
