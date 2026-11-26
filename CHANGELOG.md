@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.5 — Prepared
+
+- Move the contributor policy into `CONTRIBUTING.md` and remove the agent instruction files `AGENTS.md` and `.claude/CLAUDE.md`, which the directory no longer accepts in plugin packages. The README links to the contributor guide. Skills, tools and sign-in behaviour are unchanged.
+- Bump the package version so installed clients can detect the change. Host acceptance and publication remain separate.
+
 ## 1.10.4 — Prepared
 
 - Describe the bundled icon in the README's directory listing section without naming its file path. The icon and manifest are unchanged. Skills, tools and sign-in behaviour are unchanged.
