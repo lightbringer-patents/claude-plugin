@@ -35,9 +35,7 @@ checks. Keep it to files the directory accepts:
   `CLAUDE.local.md` or anything under `.claude/`. This guide holds the policy instead.
 - Do not name image or font files in the README or other text; describe them
   in words. Only `plugin.json` refers to the icon.
-- Do not show credentials, environment variables or example API keys anywhere.
-  The connector signs in with OAuth and needs none.
+- Do not include secrets of any kind, real or example. The connector signs in
+  with OAuth.
 
-Read the repository-root `README.md` for repository-specific work. This plugin
-does not ship agent instruction files such as `AGENTS.md` or `CLAUDE.md`; keep
-this policy here.
+Read the repository-root `README.md` for repository-specific work.
