@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.10.8 — Prepared
+
+- Route lightweight ideas to innovation assets; recommend the advertised journey for disclosure detail capture, with direct template authoring by user preference or when the journey is unavailable. Preserve the same task after a journey starts and keep patent-service submission separate.
+
+- Consolidate guided capture, source exploration and direct saves from the canonical agent-plugin release 5.7.5.
+- Use the advertised capture journey for guided work, including an unsaved read-only draft; preserve attributed source passages and verify direct saves.
+- Remove the retired innovation-tool fallbacks. Missing shared reads or disclosure writers leave the work pending with a Lightbringer continuation.
+- Retain the released Strategy purpose and scope guidance, report presentation, all eleven workflows and the canonical-source contribution policy.
+- Host acceptance and publication remain separate from source and package validation.
+
 ## 1.10.7 — Prepared
 
 - Clarify that shared skills are edited only in the canonical agent-plugin repository; release preparation replaces the mirrored skill tree here. Includes #39.
