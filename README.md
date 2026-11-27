@@ -88,7 +88,7 @@ Version 1.10.6 is prepared with eleven self-contained workflow skills, portfolio
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing this repository. It is public, and the guide sets out what may be published here.
 
-The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared changes there first, then copy the entire tree here. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+The `skills/` tree is a verbatim mirror of [agent-plugin](https://github.com/lightbringer-patents/agent-plugin). Make shared skill changes only there. Release preparation replaces this tree with a copy of that one, so a skill edit made here does not last. Keep `.claude-plugin/` and `.mcp.json` metadata separate. See [the distribution guide](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 Before release, validate both manifests and the skills explicitly:
 
