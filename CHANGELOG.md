@@ -2,21 +2,22 @@
 
 ## 1.10.8 — Prepared
 
-- Preserve supplied technical passages in lightweight saves and verify saved content before confirming completion.
-- Re-evaluate the workflow for each new request; load source-exploration guidance and check current records before reporting findings.
-- Include the guided-capture and shared-asset updates, with direct saves, exploration and read-only drafts kept distinct.
-- Retain the contributor policy and directory-compatible packaging from the current main branch; regenerate the full canonical skill mirror.
-- Package validation, host acceptance and publication remain separate; this candidate is not published.
+- Consolidate guided capture, source exploration and direct saves from the canonical agent-plugin release 5.7.5.
+- Use the advertised capture journey for guided work, including an unsaved read-only draft; preserve attributed source passages and verify direct saves.
+- Remove the retired innovation-tool fallbacks. Missing shared reads or disclosure writers leave the work pending with a Lightbringer continuation.
+- Retain the released Strategy purpose and scope guidance, report presentation, all eleven workflows and the canonical-source contribution policy.
+- Host acceptance and publication remain separate from source and package validation.
 
 ## 1.10.7 — Prepared
 
-- Consolidate source fidelity checks under “Preserve supported facts”, keeping stated drawbacks separate from intended benefits without a scenario-specific example.
-- Regenerate the complete canonical skill mirror; publication remains separate from package validation.
+- Clarify that shared skills are edited only in the canonical agent-plugin repository; release preparation replaces the mirrored skill tree here. Includes #39.
+- Bump the package version so installed clients can detect the documentation update. Skills, tools and sign-in behaviour are unchanged. Host acceptance and publication remain separate.
 
 ## 1.10.6 — Prepared
 
-- Preserve the stated drawbacks of existing approaches without inferring opposite properties from a proposed benefit.
-- Regenerate the canonical skill mirror; publication remains separate from package validation.
+- Start Strategy work with an evidence-based purpose and scope for the user to correct, including when no product is defined.
+- Mirror the current eleven canonical workflow skills, including shared disclosure capture, report presentation and record comments.
+- Preserve the existing plugin identity, directory metadata and bundled icon.
 
 ## 1.10.5 — Prepared
 
