@@ -84,7 +84,7 @@ Ask naturally, or select an installed skill from the `/` or **+** menu in Claude
 
 ## Source and release
 
-Version 1.10.1 is prepared with eleven self-contained workflow skills, portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations. Journeys start only when the connection can answer and follow them, and the skills choose a journey from the `start_journey` description; four overlapping workflows check those journeys first. Host acceptance and publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
+Version 1.10.6 is prepared with eleven self-contained workflow skills, portfolio presentation, illustration and vault file workflows, focused invention feedback and approved collaborator invitations. Journeys start only when the connection can answer and follow them, and the skills choose a journey from the `start_journey` description; four overlapping workflows check those journeys first. Strategy work proposes a correctable purpose and scope from the available evidence, including when no product is defined. Host acceptance and publication remain separate steps; see [distribution and validation](https://github.com/lightbringer-patents/agent-plugin/blob/main/DISTRIBUTION.md).
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing this repository. It is public, and the guide sets out what may be published here.
 
