@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.7 — Prepared
+
+- Clarify that shared skills are edited only in the canonical agent-plugin repository; release preparation replaces the mirrored skill tree here. Includes #39.
+- Bump the package version so installed clients can detect the documentation update. Skills, tools and sign-in behaviour are unchanged. Host acceptance and publication remain separate.
+
 ## 1.10.6 — Prepared
 
 - Start Strategy work with an evidence-based purpose and scope for the user to correct, including when no product is defined.
