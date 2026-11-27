@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.6 — Prepared
+
+- Start Strategy work with an evidence-based purpose and scope for the user to correct, including when no product is defined.
+- Mirror the current eleven canonical workflow skills, including shared disclosure capture, report presentation and record comments.
+- Preserve the existing plugin identity, directory metadata and bundled icon.
+
 ## 1.10.5 — Prepared
 
 - Move the contributor policy into `CONTRIBUTING.md` and remove the agent instruction files `AGENTS.md` and `.claude/CLAUDE.md`, which the directory no longer accepts in plugin packages. The README links to the contributor guide. Skills, tools and sign-in behaviour are unchanged.

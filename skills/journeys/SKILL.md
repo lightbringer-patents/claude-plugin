@@ -7,11 +7,17 @@ description: Find, start and follow Lightbringer journeys, in which Lightbringer
 
 A journey is work that Lightbringer's agent carries out in a conversation of its own. The agent reads the platform data it needs, asks for what it cannot find and reports an outcome. Your part is to choose the journey, give the inputs you already know, wait, deal with its questions and relay the outcome. Do not do the journey's work yourself, and do not write your own version of its result. Follow the [service conduct](references/service-conduct.md) guidance.
 
-The available journeys, their inputs and what each delivers are in the description of `start_journey`. They can differ between connections, so read that description in each conversation.
+The description of `start_journey` names the available journeys. For each one, the description tells what it is for, what it reads, what it delivers and what it saves. The input schema of `start_journey` contains their inputs and describes each input. The description and the input schema can differ between connections, so read both in each conversation.
 
 ## Choose a journey
 
-When `start_journey` is offered and the user's goal may fit a journey, check its description before you choose another workflow. Compare the goal with each journey that the description names: when it is for, what it reads and what it delivers. If one fits, use it. If two fit, choose the closer one, or ask one short question when the choice changes the result. If none fits, continue with the relevant workflow and do not mention journeys.
+Direct record CRUD follows its asset workflow without a guided journey. Explicit
+customer-side source exploration gathers the authorised context first; a journey
+cannot read private external material merely because a link was supplied. Guided
+disclosure capture may start immediately with the facts already available. Keep
+these choices distinct from a professional-service request.
+
+When `start_journey` is offered and the user's goal may fit a journey, check its description before you choose another workflow. Compare the goal with each journey that the description names: what it is for, what it reads and what it delivers. If one fits, use it. If two fit, choose the closer one, or ask one short question when the choice changes the result. If none fits, continue with the relevant workflow and do not mention journeys.
 
 If `start_journey` is not offered, or the service says that a journey is not available, continue with the other workflows. Do not describe a journey that the connection cannot start. If the description of `start_journey` names no journey, for example because the connection still holds an older definition, start none and continue with the relevant workflow; do not look for a separate list of journeys.
 
@@ -19,9 +25,11 @@ Start a journey only when the connection also offers `answer_agent` and a `get_t
 
 ## Start it
 
-Give each input that the description names for the journey and that you already know from the conversation, by its name, in the user's words. Leave out the inputs you do not know; the agent asks for them when it needs them. Do not interview the user before you start. Never ask the user for anything that the description says the journey reads: Lightbringer reads it itself.
+In the input schema of `start_journey`, find the inputs that the journey uses. Give each of these inputs that you already know from the conversation, by its name, in the user's words. Leave out the inputs you do not know; the agent asks for them when it needs them. Do not interview the user before you start. Never ask the user for anything that the description says the journey reads: Lightbringer reads it itself.
 
-Tell the user in one or two sentences what the journey does and what it delivers, as the description says. Then call `start_journey` with the journey's id (`journey`) and the `inputs`. If it refuses an input, its message names the inputs that the journey takes; correct the call once. If it says that the journey is not available, continue with the relevant workflow.
+When the input of `start_journey` includes `writable_ids`, give it only for documents or reports that the user clearly named or chose for the journey to change, and only on a connection that can write. Otherwise leave it out; the agent asks for access when it needs it. If the service refuses `writable_ids` because the connection cannot write, nothing was started: start once more without it. A connection that holds an earlier definition can still show `writable_ids` when the service no longer takes it. The run then starts with no records attached, and the agent asks for access when it needs it. Do not tell the user that a record was attached unless the task confirms it.
+
+Tell the user in one or two sentences what the journey does and what it delivers, as the description says. Include what the description says about Lightbringer credits. Then call `start_journey` with the journey's id (`journey`) and the `inputs`. If it refuses an input, its message names the inputs that the journey takes; correct the call once. If it says that the journey is not available, continue with the relevant workflow.
 
 `start_journey` returns a conversation task. Keep its `task_id`; every later call uses it.
 
@@ -45,16 +53,21 @@ If the user does not want to wait, explain that the work continues in Lightbring
 
 A task that is `awaiting_input` has `questions`, and they are for you first. Before you ask the user anything, answer every question that you can answer from this conversation and from what you already know about the user's work. Then ask the user only the rest, as written, with their options and any recommended option. A question that starts with `For the user:` is for the user only: ask it as written, even when you think you know the answer. Do not ask the user a question that you can answer, and do not guess an answer to fill a gap.
 
+Never answer for the user a question that asks them to agree to spend Lightbringer credits, to start charged work, or to let the agent save or change a record. Ask the user that question as written, and send only the answer they give.
+
 Send all answers in one `answer_agent` call: `selected_options` with the option labels exactly as listed, `free_text` with the answer in your words or the user's, or `skip` when neither of you can answer. If an answer is refused because the question already has a different answer, tell the user which answer counts. When you next report to the user, tell them briefly which questions you answered for them and how. Then wait again.
 
 ## Outcome
 
 The journey has finished when the task's `journey.outcome` is not null.
 
-- Relay the agent's result: its `last_message` and any `outputs` with their links. Keep its content and attribution; shorten it only when the user asks.
+- Relay the agent's result: its `last_message` and any `outputs` with their links. Keep its content and attribution; shorten it only when the user asks. When the result says how to deliver a report, the next item applies instead.
+- A finished task can carry text beside its data that says how to deliver the result; follow that text. When it says that the run saved a report and the connection advertises `show_report`, call `show_report` with the `report:<id>` that the text names. After the view shows the report, do not repeat the report, its findings or its link in chat; add only what the text tells you to add. Do not show the same report again when the view already shows it in this chat. When `show_report` is not advertised, or the view does not show, give the report as text with the line and the report link that the text gives. When the text says that the report was not saved, say so with the line it gives and give the report in chat. A successful tool call alone does not prove that the view showed; without a reported display problem, do not repeat the report.
 - If `outcome.state` is `reached`, say that the journey is complete. If it is `not_reached`, say which `done` items were not met, with their notes.
 - For each `coverage` source whose state is `couldnt_check`, tell the user that Lightbringer could not check it, and why. Do not present it as empty. `nothing_found` means that the source was checked and had nothing.
 - If the result says that nothing was saved, for example on a read-only connection, say so, and give the link it provides to continue in Lightbringer.
+
+If the delivery text names a tool that this connection does not advertise, use the text or link fallback that it gives. Do not call a tool that is not advertised.
 
 Other states:
 
@@ -64,7 +77,7 @@ Other states:
 
 ## After the outcome
 
-For follow-up work on the same result, continue the conversation with `ask_agent` when it is offered, or use the relevant workflow. On a connection without `ask_agent`, a finished journey is over: start the journey again for a new result.
+For follow-up work on the same result, continue the conversation with `ask_agent` when it is offered, or use the relevant workflow. On a connection without `ask_agent`, a finished journey is over: start the journey again for a new result. To open a saved report again later, use `show_report` with its `report:<id>` when it is advertised; this read saves nothing.
 
 Journeys also work on read-only connections. There, the journey's agent cannot save anything; continue a finished journey with `ask_agent` only when the connection offers it.
 
